@@ -9,5 +9,9 @@ package ooc.yoursolution;
  * @author user
  */
 public class Car {
+    private double rate;
+    private int id;
+    private Make make;
+    Map<Month, boolean[]> calender;
     
 }
