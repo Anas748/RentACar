@@ -5,10 +5,12 @@
  */
 package ooc.enums;
 
+
+
 /**
  * THIS IS SOME LEGACY CODE THAT IS PART OF THE SYSTEM AND YOU HAVE TO USE IT.
  */
-public enum Month {
+public enum Month  {
     JANUARY(31),
     FEBRUARY(28),
     MARCH(31),
@@ -23,7 +25,7 @@ public enum Month {
     DECEMBER(31);
 
     private final int numberOfDays;
-
+    
     Month(int numberOfDays) {
         this.numberOfDays = numberOfDays;
     }
