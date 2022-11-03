@@ -13,5 +13,12 @@ public class Car {
     private int id;
     private Make make;
     Map<Month, boolean[]> calender;
+    public Car(Make make,int id , double rate){
+        this.id = id;
+        this.rate = rate;
+        this.make = make;
+        createAvailability();
+    }
+
     
 }
