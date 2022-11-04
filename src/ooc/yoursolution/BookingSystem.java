@@ -18,8 +18,8 @@ public class BookingSystem implements BookingSystemInterface {
 
     @Override
     public RentACarInterface setupRentACar(BufferedReader in) throws IOException {
+        //to store cars data in arraylist
         List<Car> cars = new ArrayList<>();
-
         String list, name;
         name = in.readLine();
         //apply while loop to read each line in fine
