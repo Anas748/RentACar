@@ -13,7 +13,6 @@ import ooc.enums.Month;
  *
  * @author user
  */
-public class Car implements CarInterface {
 public final class Car implements CarInterface {
     private double rate;
     private int id;
@@ -81,7 +80,6 @@ public final class Car implements CarInterface {
 
     @Override
     public void setAvailability(Map<Month, boolean[]> availability) {
-       this.calender  = calender;
        this.calender  = availability;
     }
 
