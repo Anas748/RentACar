@@ -4,6 +4,11 @@
  */
 package ooc.yoursolution;
 
+import java.util.HashMap;
+import java.util.Map;
+import ooc.enums.Make;
+import ooc.enums.Month;
+
 /**
  *
  * @author user
