@@ -14,6 +14,7 @@ import ooc.enums.Month;
  * @author user
  */
 public class Car implements CarInterface {
+public final class Car implements CarInterface {
     private double rate;
     private int id;
     private Make make;
