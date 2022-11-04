@@ -13,7 +13,7 @@ import ooc.enums.Month;
  *
  * @author user
  */
-public final class Car implements CarInterface {
+public class Car implements CarInterface {
     private double rate;
     private int id;
     private Make make;
@@ -22,16 +22,17 @@ public final class Car implements CarInterface {
         this.id = id;
         this.rate = rate;
         this.make = make;
-        createAvailability();
+     
     }
-
+    // require to check and implemet the car obj in booking interface
     Car(int i, Make make, double rate) {
        
     }
 
     @Override
     public Map<Month, boolean[]> createAvailability() {
-        
+//         This method is in charge of creating the calendar of availability 
+//         of the car for the whole year. 
          calender = new HashMap<>();
          calender.put(Month.JANUARY, new boolean[31]);
         calender.put(Month.FEBRUARY, new boolean[28]);
