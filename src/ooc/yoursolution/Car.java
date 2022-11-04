@@ -77,6 +77,7 @@ public class Car implements CarInterface {
     @Override
     public void setAvailability(Map<Month, boolean[]> availability) {
        this.calender  = calender;
+       this.calender  = availability;
     }
 
     @Override
