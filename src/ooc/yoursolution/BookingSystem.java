@@ -22,4 +22,26 @@ public class BookingSystem implements BookingSystemInterface {
         return null;
          
      }
+    public RentACarInterface setupRentACar(BufferedReader in) throws IOException {
+        List<Car> cars = new ArrayList<>();
+
+        String list, name;
+        name = in.readLine();
+        //apply while loop to read each line in fine
+        while ((list = in.readLine()) != null) {
+            //split method to get required answers
+            String[] subs = list.split(":");
+            Make make = Make.valueOf(subs[0]);//spliting make
+            double rate = Double.parseDouble(subs[1]);//spliting rate and changing to double
+            int numCar = Integer.parseInt(subs[2]);//spliting numCar and getting interger
+            //adding loop to check debbuging
+            for (int i = 0; i < numCar; i++) {
+                Car car = new Car(i, make, rate);//requires a class in Car.java
+                cars.add(car);//car obj added
+            }
+        }
+        //To return rentAcarinterface made a obj called rentACarInterface.
+        RentACarInterface rentACarInterface = new RentACar(cars, name);
+        return rentACarInterface;
+    }
 }
