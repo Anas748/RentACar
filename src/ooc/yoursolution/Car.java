@@ -79,5 +79,14 @@ public class Car {
         return id;
     }
 
+    @Override
+    public boolean isAvailable(Month month, int day) {
+        boolean[] availability = calender.get(month);
+        if (availability[day-1] != false) {
+            availability[day-1] = true;
+        }
+        return availability[day-1];
+        
+    }
     
 }
