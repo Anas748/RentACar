@@ -39,5 +39,45 @@ public class Car {
         
         return calender;
     }
+
+    @Override
+    public Make getMake() {
+        return make;
+        
+    }
+
+    @Override
+    public void setMake(Make make) {
+       this.make = make;
+       
+    }
+
+    @Override
+    public double getRate() {
+        return rate;
+      
+    }
+
+    @Override
+    public void setRate(double rate) {
+       this.rate = rate;
+    }
+
+    @Override
+    public Map<Month, boolean[]> getAvailability() {
+        return calender;
+       
+    }
+
+    @Override
+    public void setAvailability(Map<Month, boolean[]> availability) {
+       this.calender  = calender;
+    }
+
+    @Override
+    public int getId() {
+        return id;
+    }
+
     
 }
