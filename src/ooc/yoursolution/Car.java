@@ -20,5 +20,24 @@ public class Car {
         createAvailability();
     }
 
+    @Override
+    public Map<Month, boolean[]> createAvailability() {
+        
+         calender = new HashMap<>();
+         calender.put(Month.JANUARY, new boolean[31]);
+        calender.put(Month.FEBRUARY, new boolean[28]);
+        calender.put(Month.MARCH, new boolean[31]);
+        calender.put(Month.APRIL, new boolean[30]);
+        calender.put(Month.MAY, new boolean[31]);
+        calender.put(Month.JUNE, new boolean[30]);
+        calender.put(Month.JULY, new boolean[31]);
+        calender.put(Month.AUGUST, new boolean[31]);
+        calender.put(Month.SEPTEMBER, new boolean[30]);
+        calender.put(Month.OCTOBER, new boolean[31]);
+        calender.put(Month.NOVEMBER, new boolean[30]);
+        calender.put(Month.DECEMBER, new boolean[31]);
+        
+        return calender;
+    }
     
 }
