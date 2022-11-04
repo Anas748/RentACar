@@ -9,6 +9,7 @@ package ooc.yoursolution;
  * @author user
  */
 public class Car {
+public class Car implements CarInterface {
     private double rate;
     private int id;
     private Make make;
@@ -88,5 +89,17 @@ public class Car {
         return availability[day-1];
         
     }
+
+    @Override
+    public boolean book(Month month, int day) {
+            if (calender.get(month)[day-1]) {
+            calender.get(month)[day-1] = false;
+            return true;
+        }
+
+        return false;
+    }
+    
+    
     
 }
