@@ -15,14 +15,8 @@ import ooc.enums.Make;
  * @author user
  */
 public class BookingSystem implements BookingSystemInterface {
-   
 
     @Override
-     public RentACarInterface setupRentACar(BufferedReader in) throws IOException{
-         
-        return null;
-         
-     }
     public RentACarInterface setupRentACar(BufferedReader in) throws IOException {
         List<Car> cars = new ArrayList<>();
 
